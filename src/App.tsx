@@ -1,0 +1,57 @@
+import { useEffect, useState } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
+import Experience from "./components/Experience"
+import Projects from "./components/Projects"
+import AboutMe from "./components/AboutMe"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
+
+const App = () => {
+  const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      offset: 100
+    });
+    document.documentElement.classList.toggle('dark');
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, [darkMode]);
+
+
+  const toggleDarkMode = () => {
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+    document.documentElement.classList.toggle('dark');
+  }
+
+  return (
+    <div 
+      // className={
+      //   darkMode 
+      //   ? "bg-linear-to-br from-gray-900 via-[#0d182e] to-gray-900 min-h-screen" 
+      //   : "bg-linear-to-br from-gray-50 to-blue-50 min-h-screen"
+      // }
+      style={{
+            background: darkMode ? '#111827' : '#f9fafb'
+      }}
+    >
+       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+       <Hero darkMode={darkMode} />
+       <Experience darkMode={darkMode}/>
+       <Projects darkMode={darkMode}/>
+       <AboutMe darkMode={darkMode}/>
+       <Contact darkMode={darkMode}/>
+       <Footer darkMode={darkMode}/>
+    </div>
+  )
+}
+
+export default App
