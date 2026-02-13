@@ -12,25 +12,37 @@ const Experience = ({ darkMode }: ExperienceProps) => {
             title: 'Software Developer',
             company: 'ITC S.A.',
             duration: '2025 Junio - Actualmente...',
-            description: 'Que realice'
+            description: `Desarrollo y mantengo APIs y servicios web SOAP, aplicando estándares de interoperabilidad y seguridad.
+                          Implemento y mantengo soluciones JEE 7+ desplegadas en WildFly/JBOSS, optimizando el rendimiento y la escalabilidad de los servicios empresariales.
+                          Participación activa en la actualización y mejora continua del código, aplicando refactorización y buenas prácticas orientadas a objetos.
+                          Desarrollo de microservicios con Spring Boot, con una arquitectura modular y mantenible.
+                          Colaboro en la adopción de CI/CD y Docker junto al equipo de DevOps, logrando reducir tiempos de despliegue y estandarizar entornos.`
         },
         {
             title: 'Full Stack Developer',
             company: 'Universidad ORT Uruguay',
             duration: '2024 Agosto - 2025 Junio',
-            description: 'Que realice'
+            description: `Desarrollé y mantuve aplicaciones Java 8 / JEE 6 y PHP 7.4 / 8.x (Arquitectura orientada a servicios).
+                          Implementé soluciones Full Stack utilizando Angular y JavaScript puro.
+                          Administré entornos Docker y VM, optimizando despliegues con CI/CD, Jenkins y GitHub Actions.
+                          Automatizé procesos con Python (scripts Bash), mejorando tareas repetitivas en Linux y VM.`
         },
         {
             title: 'Analista de TI',
             company: 'SOMIL S.A.',
             duration: '2023 Octubre - 2024 Agosto',
-            description: 'Que realice'
+            description: `Desarrollé soluciones Back-End con PHP (Laravel), también en Java SE con Swing JEE y Front-End con Vue.js.
+                          Implementación de Computer Vision (Python) para reconocimiento de objetos, trazabilidad y calidad.
+                          Gestioné bases de datos SQL Server y MySQL, asegurando integridad y rendimiento.`
         },
         {
             title: 'Analista de Sistema',
             company: 'Multiline Contact Center',
             duration: '2022 Junio - 2023 Octubre',
-            description: 'Que realice'
+            description: `Colaboré en el desarrollo Back-End con Laravel (PHP) y Front-End con Vue.js y JavaScript.
+                          Administré bases de datos SQL Server y MySQL.
+                          Documenté y versioné código con Git y GitLab, mejorando la trazabilidad del desarrollo.
+                          Gestioné infraestructura de red, configurando routers Cisco, Fortinet y redes LAN/WAN corporativas`
         }
     ];
 

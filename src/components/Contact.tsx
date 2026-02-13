@@ -30,7 +30,7 @@ const Contact = ({ darkMode} : ContactProps) => {
                 style={{
                     color: darkMode ? '#d1d5db' : '#6b7280'
                 }}>
-                    Pongo algo
+                    Dejá tu mensaje y te respondo a la brevedad.
                 </p>
             </div>
 
