@@ -10,6 +10,5 @@ export default defineConfig({
       usePolling: true,
     }
   },
-  base:'https://guillermoplisich07.github.io/portafolio-web'
+  base:'/portafolio-web/'
 })
-  
