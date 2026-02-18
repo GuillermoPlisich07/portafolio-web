@@ -30,7 +30,7 @@ const Navbar = ({darkMode, toggleDarkMode}: NavbarProps) => {
     }
 
     const darkColors = {
-        navBg: 'bg-linear-to-br from-gray-700 to-black',
+        navBg: 'bg-linear-to-b from-yellow-700/50 to-gray-900',
         textPrimary: 'text-white',
         textSecondary: 'text-gray-300',
         textHover: 'text-yellow-400',
@@ -48,7 +48,7 @@ const Navbar = ({darkMode, toggleDarkMode}: NavbarProps) => {
 
 
   return (
-    <div className="w-full fixed top-0 left-0 z-50">
+    <div className={`w-full fixed top-0 left-0 z-50 border-t ${darkMode ? 'border-yellow-500' : 'border-gray-300'}`}>
         <motion.nav 
         initial={{y: -100}}
         animate={{y: 0}}

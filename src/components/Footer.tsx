@@ -11,9 +11,9 @@ const Footer = ({ darkMode }: FooterProp) => {
     <footer
       style={{
         background: darkMode
-        ? 'linear-gradient(to bottom, #000000, #111827)'
+        ? 'linear-gradient(rgb(254,154,0,0.3), rgb(15,10,30))'
         : 'linear-gradient(to bottom, #f3f4f6, #e5e7eb)',
-        borderColor: darkMode ? '#374151' : '#d1d5db'
+        borderColor: darkMode ? 'rgb(254,154,0,1)' : '#d1d5db'
       }}
       className="border-t"
       >
@@ -22,7 +22,7 @@ const Footer = ({ darkMode }: FooterProp) => {
             
             <div className="text-center md:text-right">
               <p className="text-sm flex items-center justify-end gap-1 text-[#6b7280] dark:text-[#9ca3af]">
-                @{currentYear} Guillermo P. - Creo que tengo los derechos reservados ;).
+                @{currentYear} Guillermo P.
               </p>
             </div>
 
@@ -30,7 +30,7 @@ const Footer = ({ darkMode }: FooterProp) => {
               <a 
               href="https://github.com/GuillermoPlisich07"
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all
-              hoverbg-linear-to-r hover:from-yellow-500 hover:to-ambar-500 hover:text-white bg-[#374151] 
+              hover:bg-linear-to-r hover:from-yellow-500 hover:to-ambar-500 hover:text-white bg-[#374151] 
               dark:bg-[#f3f4f6] text-white dark:text-[#374151] ">
                 <SiGithub className="h-5 w-5" />
 
@@ -38,7 +38,7 @@ const Footer = ({ darkMode }: FooterProp) => {
               <a 
               href="https://www.linkedin.com/in/guillermo-antonio-p-a23aa512a/"
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all
-              hoverbg-linear-to-r hover:from-yellow-500 hover:to-ambar-500 hover:text-white bg-[#374151] 
+              hover:bg-linear-to-r hover:from-yellow-500 hover:to-ambar-500 hover:text-white bg-[#374151] 
               dark:bg-[#f3f4f6] text-white dark:text-[#374151] ">
                 <SiLinkedin className="h-6 w-6" color="#0A66C2" />
 
@@ -46,7 +46,7 @@ const Footer = ({ darkMode }: FooterProp) => {
               <a 
               href='mailto:nmguille@outlook.es'
               className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all
-              hoverbg-linear-to-r hover:from-yellow-500 hover:to-ambar-500 hover:text-white bg-[#374151] 
+              hover:bg-linear-to-r hover:from-yellow-500 hover:to-ambar-500 hover:text-white bg-[#374151] 
               dark:bg-[#f3f4f6] text-white dark:text-[#374151] ">
                 <SiGmail className="h-6 w-6" color="#D44638"/>
 

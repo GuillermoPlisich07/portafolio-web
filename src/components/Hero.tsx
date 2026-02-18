@@ -1,6 +1,8 @@
-import { SiGmail, SiLinkedin } from 'react-icons/si';
+import { SiAngular, SiGmail, SiKubernetes, SiLinkedin, SiMongodb, SiPostgresql, SiSpringboot, SiTypescript } from 'react-icons/si';
 import { motion } from "framer-motion";
 import yo from '../assets/yo.jpeg';
+import { FaGitAlt } from 'react-icons/fa6';
+import { FaDocker, FaJava, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
 
 interface HeroProps {
     darkMode: boolean;
@@ -29,13 +31,13 @@ const Hero = ({ darkMode }: HeroProps) => {
     const theme = darkMode ? darkTheme : lightTheme;
 
   return (
-     <div className="relative overflow-hidden flex flex-col">
+     <div className="relative overflow-hidden flex flex-col ">
         <section
         id="home"
         data-aos="fade-up"
         data-aos-delay="250"
         className="body-font z-10">
-            <div className="container max-w-4xl mx-auto flex px-4 sm:px-8 lg:px-14
+            <div className="container max-w-5xl mx-auto flex px-4 sm:px-8 lg:px-14
             py-12 lg:py-32 flex-col lg:flex-row mb-10 items-start justify-between
             lg:mt-0 mt-14">
                 <div className="w-full flex flex-col items-start
@@ -100,8 +102,49 @@ const Hero = ({ darkMode }: HeroProps) => {
                             <SiGmail className="h-6 w-6" color="#D44638"/>
                         </a>
                     </div>
-                    
-            </div>
+                </div>
+                <div className="hidden lg:flex lg:w-1/3 items-center justify-center">
+                    <div className="grid grid-cols-3 gap-6">
+                        {[
+                            { Icon: FaJava, color: '#f89820', delay: 0 },
+                            { Icon: SiSpringboot, color: '#6db33f', delay: 0.1 },
+                            { Icon: SiKubernetes, color: '#326ce5', delay: 0.2 },
+                            { Icon: SiPostgresql, color: '#336791', delay: 0.3 },
+                            { Icon: FaDocker, color: '#2496ed', delay: 0.4 },
+                            { Icon: SiMongodb, color: '#47a248', delay: 0.5 },
+                            { Icon: FaReact, color: '#61dafb', delay: 0.6 },
+                            { Icon: SiTypescript, color: '#3178c6', delay: 0.7 },
+                            { Icon: SiAngular, color: '#dd0031', delay: 0.8 },
+                            { Icon: FaNodeJs, color: '#339933', delay: 0.9 },
+                            { Icon: FaPython, color: '#3776ab', delay: 1.0 },
+                            { Icon: FaGitAlt, color: '#f05032', delay: 1.1 }
+                        ].map(({ Icon, color, delay }, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, scale: 0 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{
+                                    duration: 0.5,
+                                    delay: delay,
+                                    type: "spring",
+                                    stiffness: 100
+                                }}
+                                whileHover={{
+                                    scale: 1.2,
+                                    rotate: [0, -10, 10, -10, 0],
+                                    transition: { duration: 0.3 }
+                                }}
+                                className={`p-4 rounded-xl ${darkMode
+                                        ? 'bg-gray-800/50 hover:bg-gray-700/70'
+                                        : 'bg-white/50 hover:bg-white/80'
+                                    } backdrop-blur-sm border ${darkMode ? 'border-gray-700' : 'border-gray-200'
+                                    } shadow-lg hover:shadow-xl transition-all cursor-pointer`}
+                            >
+                                <Icon className="w-8 h-8" style={{ color }} />
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
             </div>
         </section>
      </div>

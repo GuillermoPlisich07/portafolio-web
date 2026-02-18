@@ -10,7 +10,7 @@ const Contact = ({ darkMode} : ContactProps) => {
             background: darkMode ? '#111827' : '#f9fafb'
         }}
         className="py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden">
-        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8 sm:mb-10 md:mb-12" data-aos="fade-up">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl mb-2 sm:mb-3"
                 style={{

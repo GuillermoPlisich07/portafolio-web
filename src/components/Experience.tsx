@@ -50,7 +50,7 @@ const Experience = ({ darkMode }: ExperienceProps) => {
         <section id='experiencia' 
             style={{color: darkMode ? '#111827' : '#f9fafb'}}
             className="relative py-24">
-            <div className="container max-w-4xl mx-auto px-4 mb-10 sm:px-8 lg:px-14">
+            <div className="container max-w-5xl mx-auto px-4 mb-10 sm:px-8 lg:px-14">
                 <div className="text-start"  data-aos="fade-up" data-aos-delay="250"> 
                     <h2
                     className="text-start text-3xl font-bold mv-3 inline-flex items-center gap-2"
