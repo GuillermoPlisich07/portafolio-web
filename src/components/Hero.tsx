@@ -1,4 +1,4 @@
-import { SiAngular, SiGmail, SiKubernetes, SiLinkedin, SiMongodb, SiPostgresql, SiSpringboot, SiTypescript } from 'react-icons/si';
+import { SiGithubactions, SiGmail, SiKubernetes, SiLinkedin, SiMongodb, SiPostgresql, SiSpringboot, SiTypescript } from 'react-icons/si';
 import { motion } from "framer-motion";
 import yo from '../assets/yo.jpeg';
 import { FaGitAlt } from 'react-icons/fa6';
@@ -114,10 +114,10 @@ const Hero = ({ darkMode }: HeroProps) => {
                             { Icon: SiMongodb, color: '#47a248', delay: 0.5 },
                             { Icon: FaReact, color: '#61dafb', delay: 0.6 },
                             { Icon: SiTypescript, color: '#3178c6', delay: 0.7 },
-                            { Icon: SiAngular, color: '#dd0031', delay: 0.8 },
                             { Icon: FaNodeJs, color: '#339933', delay: 0.9 },
                             { Icon: FaPython, color: '#3776ab', delay: 1.0 },
-                            { Icon: FaGitAlt, color: '#f05032', delay: 1.1 }
+                            { Icon: FaGitAlt, color: '#f05032', delay: 1.1 },
+                            { Icon: SiGithubactions, color: '#2088ff', delay: 1.2 }
                         ].map(({ Icon, color, delay }, index) => (
                             <motion.div
                                 key={index}
@@ -134,13 +134,13 @@ const Hero = ({ darkMode }: HeroProps) => {
                                     rotate: [0, -10, 10, -10, 0],
                                     transition: { duration: 0.3 }
                                 }}
-                                className={`p-4 rounded-xl ${darkMode
+                                className={`p-4 rounded-xl flex items-center justify-center ${darkMode
                                         ? 'bg-gray-800/50 hover:bg-gray-700/70'
                                         : 'bg-white/50 hover:bg-white/80'
                                     } backdrop-blur-sm border ${darkMode ? 'border-gray-700' : 'border-gray-200'
                                     } shadow-lg hover:shadow-xl transition-all cursor-pointer`}
                             >
-                                <Icon className="w-8 h-8" style={{ color }} />
+                                <Icon className="w-6 h-6" style={{ color }} />
                             </motion.div>
                         ))}
                     </div>
